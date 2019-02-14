@@ -64,15 +64,7 @@ namespace Arithmetic_Operations
                 }
                 else
                 {
-                    Toast.MakeText(this, "Enter values first", ToastLength.Long).Show();
-                    if (op.Text == "")
-                    {
-
-                    }
-                    else if (op.Text != "")
-                    {
-                        op.Text = "";
-                    }
+                    give_error();
                 }
 
             };
@@ -87,15 +79,7 @@ namespace Arithmetic_Operations
                 }
                 else
                 {
-                    Toast.MakeText(this, "Enter values first", ToastLength.Long).Show();
-                    if (op.Text == "")
-                    {
-
-                    }
-                    else if (op.Text != "")
-                    {
-                        op.Text = "";
-                    }
+                    give_error();
                 }
 
             };
@@ -110,34 +94,22 @@ namespace Arithmetic_Operations
                 }
                 else
                 {
-                    Toast.MakeText(this, "Enter values first", ToastLength.Long).Show();
-                    if (op.Text == "")
-                    {
-
-                    }
-                    else if (op.Text != "")
-                    {
-                        op.Text = "";
-                    }
+                    give_error();
                 }
 
             };
+        }
+        public void give_error()
+        {
+            Toast.MakeText(this, "Enter values first", ToastLength.Long).Show();
+            if (op.Text == "")
+            {
 
-
-            //minus.Click += delegate
-            //{
-            //    op.Text = Convert.ToString(Convert.ToDouble(input1.Text) - Convert.ToDouble(input2.Text));
-            //};
-            //product.Click += delegate
-            //{
-            //    op.Text = Convert.ToString(Convert.ToDouble(input1.Text) * Convert.ToDouble(input2.Text));
-            //};
-            //divide.Click += delegate
-            //{
-            //    op.Text = Convert.ToString(Convert.ToDouble(input1.Text) / Convert.ToDouble(input2.Text));
-            //};
-
-
+            }
+            else if (op.Text != "")
+            {
+                op.Text = "";
+            }
         }
 
         
